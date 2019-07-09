@@ -5,26 +5,28 @@ import org.openqa.selenium.WebDriver;
 //import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
 public class Gfi {
 	
-	
-public void connectGfi(String url  ) {
-		
-	
 
-	/*
-	 * Ouverture d'instance pour utiliser les methodes de la classe WebDriver
-	 */
-	WebDriver driver = new ChromeDriver();
-	
-	/*
-	 * Gestion de la fenetre du navigateur : Maximiser le navigateur
-	 */
-	driver.manage().window().maximize();
-	/*
-	 * Envoie d'URL dans le navigateur
-	 */
-	driver.get(url);
+		
+	 public static WebDriver driver ;
+
+	public void connexionGfi(String URL ) {
+		
+		/*
+		 * Ouverture d'instance pour utiliser les methodes de la classe WebDriver
+		 */
+		WebDriver driver = new ChromeDriver();
+
+		/*
+		 * Gestion de la fenetre du navigateur : Maximiser le navigateur
+		 */
+		driver.manage().window().maximize();
+		/*
+		 * Envoie d'URL dans le navigateur
+		 */
+		driver.get(URL);
 		/*
 		 * Clique sur le bouton connection
 		 */

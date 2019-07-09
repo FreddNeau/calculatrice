@@ -4,12 +4,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
+
+
 public class Googlecom {
 
+	 WebDriver driver ;
 	
-
-	public void connectGoogle(String URL, String Email, String password) throws InterruptedException {
 		
+
+	public void connectGoogle(String URL,String Email, String password) throws InterruptedException {
 		/*
 		 * Ouverture d'instance pour utiliser les methodes de la classe WebDriver
 		 */
@@ -26,7 +30,6 @@ public class Googlecom {
 		/*
 		 * Clique sur le bouton connection
 		 */
-
 		driver.findElement(By.id("gb_70")).click();
 		driver.findElement(By.id("identifierId")).sendKeys(Email);
 		driver.findElement(By.xpath("//*[@id='identifierNext']/span/span")).click();
