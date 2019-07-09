@@ -10,6 +10,7 @@ public class Maison {
 		float b =6;
 		float somme = a+b;
 		System.out.print("la somme est égale " +somme );
+		System.out.print("Hello,\"world!\"");
 
 	}
 
