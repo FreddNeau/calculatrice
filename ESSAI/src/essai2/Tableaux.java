@@ -10,7 +10,7 @@ public class Tableaux {
 				System.out.println("Différents");
 		}else {
 			int i = 0;
-			while( i< tab1.length && tab1[i] == tab2[i]) {
+			while( i< tab1.length && tab1[i] == tab2[i]) { //on parcourt élément par élément
 				++i;
 			}
 			
